@@ -1,3 +1,6 @@
-fv3_ccpp_control
+control
 thr mpi dcp rst bit dbg
-ci-test-weather
+regional_control
+thr dcp
+cpld_control_c96_p7
+rst dbg

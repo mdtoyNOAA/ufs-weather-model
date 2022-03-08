@@ -1,7 +1,7 @@
 [submodule "FV3"]
   path = FV3
-  url = https://github.com/NOAA-GSL/fv3atm
-  branch = RRFS_dev
+  url = https://github.com/mdtoy/fv3atm
+  branch = RRFS_dev_drag_suite_mods
 [submodule "NEMS"]
   path = NEMS
   url = https://github.com/NOAA-EMC/NEMS

@@ -1,3 +1,2401 @@
 Fri Mar 25 03:02:21 UTC 2022
 Start Regression test
 
+Compile 001 elapsed time 469 seconds. -DAPP=S2SW -DCCPP_SUITES=FV3_GFS_v16_coupled_nsstNoahmpUGWPv1,FV3_GFS_v16_coupled_p7_rrtmgp,FV3_GFS_v16_coupled_p8 -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
+Compile 002 elapsed time 445 seconds. -DAPP=S2S -DDEBUG=ON -DCCPP_SUITES=FV3_GFS_v16_coupled_p8 -DMPI=ON -DCMAKE_BUILD_TYPE=Debug -DMOM6SOLO=ON
+Compile 003 elapsed time 571 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16,FV3_GFS_v15_thompson_mynn,FV3_GFS_v15_thompson_mynn_RRTMGP,FV3_GFS_v16_p7_rrtmgp,FV3_GFS_v16_p8 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 004 elapsed time 430 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_RAP,FV3_RAP_sfcdiff,FV3_HRRR,FV3_RRFS_v1beta -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 005 elapsed time 405 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_RRTMGP,FV3_GFS_v16_csawmg,FV3_GFS_v16_flake,FV3_GFS_v16_ugwpv1,FV3_GFS_v16_ras,FV3_GFS_v16_thompson,FV3_GFS_v16_noahmp -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 006 elapsed time 447 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_fv3wam -D32BIT=ON -DMULTI_GASES=ON -DREPRO=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Bitforbit
+Compile 007 elapsed time 330 seconds. -DAPP=ATM -DDEBUG=ON -DCCPP_SUITES=FV3_GFS_v16,FV3_GFS_v16_RRTMGP,FV3_GFS_v16_csawmg,FV3_GFS_v16_flake,FV3_GFS_v16_ugwpv1,FV3_GFS_v16_ras,FV3_GFS_v16_noahmp,FV3_GFS_v16_thompson,FV3_GFS_v15_thompson_mynn,FV3_GFS_v16_p8 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
+Compile 008 elapsed time 236 seconds. -DAPP=ATM -DDEBUG=ON -DCCPP_SUITES=FV3_RAP,FV3_RAP_cires_ugwp,FV3_RAP_unified_ugwp,FV3_RAP_noah,FV3_RAP_RRTMGP,FV3_RAP_sfcdiff,FV3_RAP_flake,FV3_RAP_noah_sfcdiff_cires_ugwp,FV3_RRFS_v1beta -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
+Compile 009 elapsed time 169 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_fv3wam -D32BIT=ON -DMULTI_GASES=ON -DDEBUG=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug
+Compile 010 elapsed time 423 seconds. -DAPP=HAFSW -DCCPP_SUITES=FV3_HAFS_v0_gfdlmp_tedmf,FV3_HAFS_v0_gfdlmp_tedmf_nonsst,FV3_HAFS_v0_thompson_tedmf_gfdlsf -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 011 elapsed time 416 seconds. -DAPP=HAFS-ALL -DCCPP_SUITES=FV3_HAFS_v0_gfdlmp_tedmf,FV3_HAFS_v0_gfdlmp_tedmf_nonsst -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 012 elapsed time 199 seconds. -DAPP=NG-GODAS -DMPI=ON -DCMAKE_BUILD_TYPE=Release -DMOM6SOLO=ON
+Compile 013 elapsed time 167 seconds. -DAPP=NG-GODAS -DDEBUG=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Debug -DMOM6SOLO=ON
+Compile 014 elapsed time 400 seconds. -DAPP=ATMW -DCCPP_SUITES=FV3_GFS_v16 -D32BIT=ON -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+Compile 015 elapsed time 635 seconds. -DAPP=ATMAERO -DCCPP_SUITES=FV3_GFS_v16 -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/cpld_control_p8
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/cpld_control_p8
+Checking test 001 cpld_control_p8 results ....
+Moving baseline 001 cpld_control_p8 files ....
+ Moving sfcf021.tile1.nc .........OK
+ Moving sfcf021.tile2.nc .........OK
+ Moving sfcf021.tile3.nc .........OK
+ Moving sfcf021.tile4.nc .........OK
+ Moving sfcf021.tile5.nc .........OK
+ Moving sfcf021.tile6.nc .........OK
+ Moving atmf021.tile1.nc .........OK
+ Moving atmf021.tile2.nc .........OK
+ Moving atmf021.tile3.nc .........OK
+ Moving atmf021.tile4.nc .........OK
+ Moving atmf021.tile5.nc .........OK
+ Moving atmf021.tile6.nc .........OK
+ Moving sfcf024.tile1.nc .........OK
+ Moving sfcf024.tile2.nc .........OK
+ Moving sfcf024.tile3.nc .........OK
+ Moving sfcf024.tile4.nc .........OK
+ Moving sfcf024.tile5.nc .........OK
+ Moving sfcf024.tile6.nc .........OK
+ Moving atmf024.tile1.nc .........OK
+ Moving atmf024.tile2.nc .........OK
+ Moving atmf024.tile3.nc .........OK
+ Moving atmf024.tile4.nc .........OK
+ Moving atmf024.tile5.nc .........OK
+ Moving atmf024.tile6.nc .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2021-03-23-21600.nc .........OK
+ Moving RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
+ Moving 20210323.060000.out_grd.glo_1deg .........OK
+ Moving 20210323.060000.out_pnt.points .........OK
+ Moving 20210323.060000.restart.glo_1deg .........OK
+
+  0: The total amount of wall time                        = 217.682311
+  0: The maximum resident set size (KB)                   = 565120
+
+Test 001 cpld_control_p8 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/cpld_control_p7_rrtmgp
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/cpld_control_p7_rrtmgp
+Checking test 002 cpld_control_p7_rrtmgp results ....
+Moving baseline 002 cpld_control_p7_rrtmgp files ....
+ Moving sfcf024.tile1.nc .........OK
+ Moving sfcf024.tile2.nc .........OK
+ Moving sfcf024.tile3.nc .........OK
+ Moving sfcf024.tile4.nc .........OK
+ Moving sfcf024.tile5.nc .........OK
+ Moving sfcf024.tile6.nc .........OK
+ Moving atmf024.tile1.nc .........OK
+ Moving atmf024.tile2.nc .........OK
+ Moving atmf024.tile3.nc .........OK
+ Moving atmf024.tile4.nc .........OK
+ Moving atmf024.tile5.nc .........OK
+ Moving atmf024.tile6.nc .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2021-03-23-21600.nc .........OK
+ Moving RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
+ Moving 20210323.060000.out_grd.glo_1deg .........OK
+ Moving 20210323.060000.out_pnt.points .........OK
+ Moving 20210323.060000.restart.glo_1deg .........OK
+
+  0: The total amount of wall time                        = 252.065714
+  0: The maximum resident set size (KB)                   = 664940
+
+Test 002 cpld_control_p7_rrtmgp PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/cpld_bmark_p7
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/cpld_bmark_p7
+Checking test 003 cpld_bmark_p7 results ....
+Moving baseline 003 cpld_bmark_p7 files ....
+ Moving sfcf006.nc .........OK
+ Moving atmf006.nc .........OK
+ Moving 20130401.060000.out_grd.gwes_30m .........OK
+ Moving 20130401.060000.out_pnt.points .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/MOM.res_1.nc .........OK
+ Moving RESTART/MOM.res_2.nc .........OK
+ Moving RESTART/MOM.res_3.nc .........OK
+ Moving RESTART/iced.2013-04-01-21600.nc .........OK
+ Moving RESTART/ufs.cpld.cpl.r.2013-04-01-21600.nc .........OK
+
+  0: The total amount of wall time                        = 865.135061
+  0: The maximum resident set size (KB)                   = 1235296
+
+Test 003 cpld_bmark_p7 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/cpld_bmark_p8
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/cpld_bmark_p8
+Checking test 004 cpld_bmark_p8 results ....
+Moving baseline 004 cpld_bmark_p8 files ....
+ Moving sfcf006.nc .........OK
+ Moving atmf006.nc .........OK
+ Moving 20130401.060000.out_grd.gwes_30m .........OK
+ Moving 20130401.060000.out_pnt.points .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/MOM.res_1.nc .........OK
+ Moving RESTART/MOM.res_2.nc .........OK
+ Moving RESTART/MOM.res_3.nc .........OK
+ Moving RESTART/iced.2013-04-01-21600.nc .........OK
+ Moving RESTART/ufs.cpld.cpl.r.2013-04-01-21600.nc .........OK
+
+  0: The total amount of wall time                        = 869.919960
+  0: The maximum resident set size (KB)                   = 1235972
+
+Test 004 cpld_bmark_p8 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/cpld_control_c96_p8
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/cpld_control_c96_p8
+Checking test 005 cpld_control_c96_p8 results ....
+Moving baseline 005 cpld_control_c96_p8 files ....
+ Moving sfcf021.tile1.nc .........OK
+ Moving sfcf021.tile2.nc .........OK
+ Moving sfcf021.tile3.nc .........OK
+ Moving sfcf021.tile4.nc .........OK
+ Moving sfcf021.tile5.nc .........OK
+ Moving sfcf021.tile6.nc .........OK
+ Moving atmf021.tile1.nc .........OK
+ Moving atmf021.tile2.nc .........OK
+ Moving atmf021.tile3.nc .........OK
+ Moving atmf021.tile4.nc .........OK
+ Moving atmf021.tile5.nc .........OK
+ Moving atmf021.tile6.nc .........OK
+ Moving sfcf024.tile1.nc .........OK
+ Moving sfcf024.tile2.nc .........OK
+ Moving sfcf024.tile3.nc .........OK
+ Moving sfcf024.tile4.nc .........OK
+ Moving sfcf024.tile5.nc .........OK
+ Moving sfcf024.tile6.nc .........OK
+ Moving atmf024.tile1.nc .........OK
+ Moving atmf024.tile2.nc .........OK
+ Moving atmf024.tile3.nc .........OK
+ Moving atmf024.tile4.nc .........OK
+ Moving atmf024.tile5.nc .........OK
+ Moving atmf024.tile6.nc .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2021-03-23-21600.nc .........OK
+ Moving RESTART/ufs.cpld.cpl.r.2021-03-23-21600.nc .........OK
+
+  0: The total amount of wall time                        = 205.266842
+  0: The maximum resident set size (KB)                   = 558136
+
+Test 005 cpld_control_c96_p8 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/cpld_control_c192_p8
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/cpld_control_c192_p8
+Checking test 006 cpld_control_c192_p8 results ....
+Moving baseline 006 cpld_control_c192_p8 files ....
+ Moving sfcf036.tile1.nc .........OK
+ Moving sfcf036.tile2.nc .........OK
+ Moving sfcf036.tile3.nc .........OK
+ Moving sfcf036.tile4.nc .........OK
+ Moving sfcf036.tile5.nc .........OK
+ Moving sfcf036.tile6.nc .........OK
+ Moving atmf036.tile1.nc .........OK
+ Moving atmf036.tile2.nc .........OK
+ Moving atmf036.tile3.nc .........OK
+ Moving atmf036.tile4.nc .........OK
+ Moving atmf036.tile5.nc .........OK
+ Moving atmf036.tile6.nc .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2021-03-23-64800.nc .........OK
+ Moving RESTART/ufs.cpld.cpl.r.2021-03-23-64800.nc .........OK
+
+  0: The total amount of wall time                        = 843.140625
+  0: The maximum resident set size (KB)                   = 731016
+
+Test 006 cpld_control_c192_p8 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/cpld_control_c384_p8
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/cpld_control_c384_p8
+Checking test 007 cpld_control_c384_p8 results ....
+Moving baseline 007 cpld_control_c384_p8 files ....
+ Moving sfcf006.nc .........OK
+ Moving atmf006.nc .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/MOM.res_1.nc .........OK
+ Moving RESTART/MOM.res_2.nc .........OK
+ Moving RESTART/MOM.res_3.nc .........OK
+ Moving RESTART/iced.2021-03-22-43200.nc .........OK
+ Moving RESTART/ufs.cpld.cpl.r.2021-03-22-43200.nc .........OK
+
+  0: The total amount of wall time                        = 978.585666
+  0: The maximum resident set size (KB)                   = 1249548
+
+Test 007 cpld_control_c384_p8 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/cpld_debug_p8
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/cpld_debug_p8
+Checking test 008 cpld_debug_p8 results ....
+Moving baseline 008 cpld_debug_p8 files ....
+ Moving sfcf006.tile1.nc .........OK
+ Moving sfcf006.tile2.nc .........OK
+ Moving sfcf006.tile3.nc .........OK
+ Moving sfcf006.tile4.nc .........OK
+ Moving sfcf006.tile5.nc .........OK
+ Moving sfcf006.tile6.nc .........OK
+ Moving atmf006.tile1.nc .........OK
+ Moving atmf006.tile2.nc .........OK
+ Moving atmf006.tile3.nc .........OK
+ Moving atmf006.tile4.nc .........OK
+ Moving atmf006.tile5.nc .........OK
+ Moving atmf006.tile6.nc .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2021-03-22-43200.nc .........OK
+ Moving RESTART/ufs.cpld.cpl.r.2021-03-22-43200.nc .........OK
+
+  0: The total amount of wall time                        = 606.523683
+  0: The maximum resident set size (KB)                   = 613604
+
+Test 008 cpld_debug_p8 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control
+Checking test 009 control results ....
+Moving baseline 009 control files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf021.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf021.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF21 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF21 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+
+  0: The total amount of wall time                        = 127.538567
+  0: The maximum resident set size (KB)                   = 459740
+
+Test 009 control PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_CubedSphereGrid
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_CubedSphereGrid
+Checking test 010 control_CubedSphereGrid results ....
+Moving baseline 010 control_CubedSphereGrid files ....
+ Moving sfcf000.tile1.nc .........OK
+ Moving sfcf000.tile2.nc .........OK
+ Moving sfcf000.tile3.nc .........OK
+ Moving sfcf000.tile4.nc .........OK
+ Moving sfcf000.tile5.nc .........OK
+ Moving sfcf000.tile6.nc .........OK
+ Moving sfcf024.tile1.nc .........OK
+ Moving sfcf024.tile2.nc .........OK
+ Moving sfcf024.tile3.nc .........OK
+ Moving sfcf024.tile4.nc .........OK
+ Moving sfcf024.tile5.nc .........OK
+ Moving sfcf024.tile6.nc .........OK
+ Moving atmf000.tile1.nc .........OK
+ Moving atmf000.tile2.nc .........OK
+ Moving atmf000.tile3.nc .........OK
+ Moving atmf000.tile4.nc .........OK
+ Moving atmf000.tile5.nc .........OK
+ Moving atmf000.tile6.nc .........OK
+ Moving atmf024.tile1.nc .........OK
+ Moving atmf024.tile2.nc .........OK
+ Moving atmf024.tile3.nc .........OK
+ Moving atmf024.tile4.nc .........OK
+ Moving atmf024.tile5.nc .........OK
+ Moving atmf024.tile6.nc .........OK
+
+  0: The total amount of wall time                        = 123.018097
+  0: The maximum resident set size (KB)                   = 465096
+
+Test 010 control_CubedSphereGrid PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_latlon
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_latlon
+Checking test 011 control_latlon results ....
+Moving baseline 011 control_latlon files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 120.034439
+  0: The maximum resident set size (KB)                   = 459516
+
+Test 011 control_latlon PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_wrtGauss_netcdf_parallel
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_wrtGauss_netcdf_parallel
+Checking test 012 control_wrtGauss_netcdf_parallel results ....
+Moving baseline 012 control_wrtGauss_netcdf_parallel files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 126.889204
+  0: The maximum resident set size (KB)                   = 458456
+
+Test 012 control_wrtGauss_netcdf_parallel PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_c48
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_c48
+Checking test 013 control_c48 results ....
+Moving baseline 013 control_c48 files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+
+0: The total amount of wall time                        = 308.377146
+0: The maximum resident set size (KB)                   = 662852
+
+Test 013 control_c48 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_c192
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_c192
+Checking test 014 control_c192 results ....
+Moving baseline 014 control_c192 files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 466.631966
+  0: The maximum resident set size (KB)                   = 561820
+
+Test 014 control_c192 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_c384
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_c384
+Checking test 015 control_c384 results ....
+Moving baseline 015 control_c384 files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf012.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf012.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF12 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF12 .........OK
+
+  0: The total amount of wall time                        = 747.602811
+  0: The maximum resident set size (KB)                   = 827940
+
+Test 015 control_c384 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_c384gdas
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_c384gdas
+Checking test 016 control_c384gdas results ....
+Moving baseline 016 control_c384gdas files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf006.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf006.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF06 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF06 .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+
+  0: The total amount of wall time                        = 680.045504
+  0: The maximum resident set size (KB)                   = 967504
+
+Test 016 control_c384gdas PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_stochy
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_stochy
+Checking test 017 control_stochy results ....
+Moving baseline 017 control_stochy files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf012.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf012.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF12 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF12 .........OK
+
+  0: The total amount of wall time                        = 81.508038
+  0: The maximum resident set size (KB)                   = 462628
+
+Test 017 control_stochy PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_lndp
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_lndp
+Checking test 018 control_lndp results ....
+Moving baseline 018 control_lndp files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf012.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf012.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF12 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF12 .........OK
+
+  0: The total amount of wall time                        = 73.576505
+  0: The maximum resident set size (KB)                   = 471736
+
+Test 018 control_lndp PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_iovr4
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_iovr4
+Checking test 019 control_iovr4 results ....
+Moving baseline 019 control_iovr4 files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf021.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf021.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF21 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF21 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 123.032404
+  0: The maximum resident set size (KB)                   = 464764
+
+Test 019 control_iovr4 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_iovr5
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_iovr5
+Checking test 020 control_iovr5 results ....
+Moving baseline 020 control_iovr5 files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf021.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf021.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF21 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF21 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 121.472246
+  0: The maximum resident set size (KB)                   = 461896
+
+Test 020 control_iovr5 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_p8
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_p8
+Checking test 021 control_p8 results ....
+Moving baseline 021 control_p8 files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf021.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf021.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF21 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF21 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+
+  0: The total amount of wall time                        = 136.523123
+  0: The maximum resident set size (KB)                   = 495768
+
+Test 021 control_p8 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_p7_rrtmgp
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_p7_rrtmgp
+Checking test 022 control_p7_rrtmgp results ....
+Moving baseline 022 control_p7_rrtmgp files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf021.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf021.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF21 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF21 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+
+  0: The total amount of wall time                        = 175.609846
+  0: The maximum resident set size (KB)                   = 592896
+
+Test 022 control_p7_rrtmgp PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/fv3_regional_control
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/regional_control
+Checking test 023 regional_control results ....
+Moving baseline 023 regional_control files ....
+ Moving dynf000.nc .........OK
+ Moving dynf024.nc .........OK
+ Moving phyf000.nc .........OK
+ Moving phyf024.nc .........OK
+ Moving PRSLEV.GrbF00 .........OK
+ Moving PRSLEV.GrbF24 .........OK
+ Moving NATLEV.GrbF00 .........OK
+ Moving NATLEV.GrbF24 .........OK
+
+ 0: The total amount of wall time                        = 301.647211
+ 0: The maximum resident set size (KB)                   = 578744
+
+Test 023 regional_control PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/fv3_regional_noquilt
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/regional_noquilt
+Checking test 024 regional_noquilt results ....
+Moving baseline 024 regional_noquilt files ....
+ Moving atmos_4xdaily.nc .........OK
+ Moving fv3_history2d.nc .........OK
+ Moving fv3_history.nc .........OK
+ Moving RESTART/fv_core.res.tile1_new.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1_new.nc .........OK
+
+ 0: The total amount of wall time                        = 312.904566
+ 0: The maximum resident set size (KB)                   = 588420
+
+Test 024 regional_noquilt PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/fv3_regional_hafs
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/regional_hafs
+Checking test 025 regional_hafs results ....
+Moving baseline 025 regional_hafs files ....
+ Moving dynf000.nc .........OK
+ Moving dynf024.nc .........OK
+ Moving phyf000.nc .........OK
+ Moving phyf024.nc .........OK
+ Moving HURPRS.GrbF00 .........OK
+ Moving HURPRS.GrbF24 .........OK
+
+ 0: The total amount of wall time                        = 296.588381
+ 0: The maximum resident set size (KB)                   = 575208
+
+Test 025 regional_hafs PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/fv3_regional_netcdf_parallel
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/regional_netcdf_parallel
+Checking test 026 regional_netcdf_parallel results ....
+Moving baseline 026 regional_netcdf_parallel files ....
+ Moving dynf000.nc .........OK
+ Moving dynf024.nc .........OK
+ Moving phyf000.nc .........OK
+ Moving phyf024.nc .........OK
+
+ 0: The total amount of wall time                        = 295.165653
+ 0: The maximum resident set size (KB)                   = 576992
+
+Test 026 regional_netcdf_parallel PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/fv3_regional_RRTMGP
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/regional_RRTMGP
+Checking test 027 regional_RRTMGP results ....
+Moving baseline 027 regional_RRTMGP files ....
+ Moving dynf000.nc .........OK
+ Moving dynf024.nc .........OK
+ Moving phyf000.nc .........OK
+ Moving phyf024.nc .........OK
+ Moving PRSLEV.GrbF00 .........OK
+ Moving PRSLEV.GrbF24 .........OK
+ Moving NATLEV.GrbF00 .........OK
+ Moving NATLEV.GrbF24 .........OK
+
+ 0: The total amount of wall time                        = 375.005045
+ 0: The maximum resident set size (KB)                   = 697840
+
+Test 027 regional_RRTMGP PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_control
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_control
+Checking test 028 rap_control results ....
+Moving baseline 028 rap_control files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf021.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf021.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF21 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF21 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+
+  0: The total amount of wall time                        = 350.779467
+  0: The maximum resident set size (KB)                   = 833836
+
+Test 028 rap_control PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/regional_spp_sppt_shum_skeb
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/regional_spp_sppt_shum_skeb
+Checking test 029 regional_spp_sppt_shum_skeb results ....
+Moving baseline 029 regional_spp_sppt_shum_skeb files ....
+ Moving dynf000.nc .........OK
+ Moving dynf001.nc .........OK
+ Moving phyf000.nc .........OK
+ Moving phyf001.nc .........OK
+ Moving PRSLEV.GrbF00 .........OK
+ Moving PRSLEV.GrbF01 .........OK
+ Moving NATLEV.GrbF00 .........OK
+ Moving NATLEV.GrbF01 .........OK
+
+  0: The total amount of wall time                        = 273.900722
+  0: The maximum resident set size (KB)                   = 922728
+
+Test 029 regional_spp_sppt_shum_skeb PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_sfcdiff
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_sfcdiff
+Checking test 030 rap_sfcdiff results ....
+Moving baseline 030 rap_sfcdiff files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf021.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf021.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF21 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF21 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+
+  0: The total amount of wall time                        = 359.436402
+  0: The maximum resident set size (KB)                   = 833644
+
+Test 030 rap_sfcdiff PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hrrr_control
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hrrr_control
+Checking test 031 hrrr_control results ....
+Moving baseline 031 hrrr_control files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf021.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf021.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF21 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF21 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+
+  0: The total amount of wall time                        = 349.154881
+  0: The maximum resident set size (KB)                   = 830700
+
+Test 031 hrrr_control PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rrfs_v1beta
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rrfs_v1beta
+Checking test 032 rrfs_v1beta results ....
+Moving baseline 032 rrfs_v1beta files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf021.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf021.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF21 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF21 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+
+  0: The total amount of wall time                        = 341.801500
+  0: The maximum resident set size (KB)                   = 832108
+
+Test 032 rrfs_v1beta PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rrfs_conus13km_hrrr_warm
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rrfs_conus13km_hrrr_warm
+Checking test 033 rrfs_conus13km_hrrr_warm results ....
+Moving baseline 033 rrfs_conus13km_hrrr_warm files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving sfcf002.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+ Moving atmf002.nc .........OK
+
+  0: The total amount of wall time                        = 159.768080
+  0: The maximum resident set size (KB)                   = 662976
+
+Test 033 rrfs_conus13km_hrrr_warm PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rrfs_conus13km_radar_tten_warm
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rrfs_conus13km_radar_tten_warm
+Checking test 034 rrfs_conus13km_radar_tten_warm results ....
+Moving baseline 034 rrfs_conus13km_radar_tten_warm files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving sfcf002.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+ Moving atmf002.nc .........OK
+
+  0: The total amount of wall time                        = 167.228216
+  0: The maximum resident set size (KB)                   = 665408
+
+Test 034 rrfs_conus13km_radar_tten_warm PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_rrtmgp
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_rrtmgp
+Checking test 035 control_rrtmgp results ....
+Moving baseline 035 control_rrtmgp files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 190.728909
+  0: The maximum resident set size (KB)                   = 590540
+
+Test 035 control_rrtmgp PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_rrtmgp_c192
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_rrtmgp_c192
+Checking test 036 control_rrtmgp_c192 results ....
+Moving baseline 036 control_rrtmgp_c192 files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf012.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf012.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF12 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF12 .........OK
+
+  0: The total amount of wall time                        = 505.624119
+  0: The maximum resident set size (KB)                   = 803788
+
+Test 036 control_rrtmgp_c192 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_csawmg
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_csawmg
+Checking test 037 control_csawmg results ....
+Moving baseline 037 control_csawmg files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 318.022540
+  0: The maximum resident set size (KB)                   = 529960
+
+Test 037 control_csawmg PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_csawmgt
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_csawmgt
+Checking test 038 control_csawmgt results ....
+Moving baseline 038 control_csawmgt files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 310.209356
+  0: The maximum resident set size (KB)                   = 530312
+
+Test 038 control_csawmgt PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_flake
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_flake
+Checking test 039 control_flake results ....
+Moving baseline 039 control_flake files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 225.132620
+  0: The maximum resident set size (KB)                   = 536108
+
+Test 039 control_flake PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_ras
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_ras
+Checking test 040 control_ras results ....
+Moving baseline 040 control_ras files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 168.871796
+  0: The maximum resident set size (KB)                   = 491164
+
+Test 040 control_ras PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_thompson
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_thompson
+Checking test 041 control_thompson results ....
+Moving baseline 041 control_thompson files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 211.444899
+  0: The maximum resident set size (KB)                   = 847820
+
+Test 041 control_thompson PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_thompson_no_aero
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_thompson_no_aero
+Checking test 042 control_thompson_no_aero results ....
+Moving baseline 042 control_thompson_no_aero files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+
+  0: The total amount of wall time                        = 200.755829
+  0: The maximum resident set size (KB)                   = 843480
+
+Test 042 control_thompson_no_aero PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_wam_repro
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_wam_repro
+Checking test 043 control_wam results ....
+Moving baseline 043 control_wam files ....
+ Moving sfcf024.nc .........OK
+ Moving atmf024.nc .........OK
+
+  0: The total amount of wall time                        = 118.034954
+  0: The maximum resident set size (KB)                   = 227880
+
+Test 043 control_wam PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_debug
+Checking test 044 control_debug results ....
+Moving baseline 044 control_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 144.292796
+  0: The maximum resident set size (KB)                   = 529140
+
+Test 044 control_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_CubedSphereGrid_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_CubedSphereGrid_debug
+Checking test 045 control_CubedSphereGrid_debug results ....
+Moving baseline 045 control_CubedSphereGrid_debug files ....
+ Moving sfcf000.tile1.nc .........OK
+ Moving sfcf000.tile2.nc .........OK
+ Moving sfcf000.tile3.nc .........OK
+ Moving sfcf000.tile4.nc .........OK
+ Moving sfcf000.tile5.nc .........OK
+ Moving sfcf000.tile6.nc .........OK
+ Moving sfcf001.tile1.nc .........OK
+ Moving sfcf001.tile2.nc .........OK
+ Moving sfcf001.tile3.nc .........OK
+ Moving sfcf001.tile4.nc .........OK
+ Moving sfcf001.tile5.nc .........OK
+ Moving sfcf001.tile6.nc .........OK
+ Moving atmf000.tile1.nc .........OK
+ Moving atmf000.tile2.nc .........OK
+ Moving atmf000.tile3.nc .........OK
+ Moving atmf000.tile4.nc .........OK
+ Moving atmf000.tile5.nc .........OK
+ Moving atmf000.tile6.nc .........OK
+ Moving atmf001.tile1.nc .........OK
+ Moving atmf001.tile2.nc .........OK
+ Moving atmf001.tile3.nc .........OK
+ Moving atmf001.tile4.nc .........OK
+ Moving atmf001.tile5.nc .........OK
+ Moving atmf001.tile6.nc .........OK
+
+  0: The total amount of wall time                        = 157.138847
+  0: The maximum resident set size (KB)                   = 535988
+
+Test 045 control_CubedSphereGrid_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_wrtGauss_netcdf_parallel_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_wrtGauss_netcdf_parallel_debug
+Checking test 046 control_wrtGauss_netcdf_parallel_debug results ....
+Moving baseline 046 control_wrtGauss_netcdf_parallel_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 145.466400
+  0: The maximum resident set size (KB)                   = 533312
+
+Test 046 control_wrtGauss_netcdf_parallel_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_stochy_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_stochy_debug
+Checking test 047 control_stochy_debug results ....
+Moving baseline 047 control_stochy_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 161.380173
+  0: The maximum resident set size (KB)                   = 535480
+
+Test 047 control_stochy_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_lndp_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_lndp_debug
+Checking test 048 control_lndp_debug results ....
+Moving baseline 048 control_lndp_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 147.615644
+  0: The maximum resident set size (KB)                   = 536292
+
+Test 048 control_lndp_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_rrtmgp_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_rrtmgp_debug
+Checking test 049 control_rrtmgp_debug results ....
+Moving baseline 049 control_rrtmgp_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 161.812939
+  0: The maximum resident set size (KB)                   = 636480
+
+Test 049 control_rrtmgp_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_csawmg_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_csawmg_debug
+Checking test 050 control_csawmg_debug results ....
+Moving baseline 050 control_csawmg_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 222.686195
+  0: The maximum resident set size (KB)                   = 574004
+
+Test 050 control_csawmg_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_csawmgt_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_csawmgt_debug
+Checking test 051 control_csawmgt_debug results ....
+Moving baseline 051 control_csawmgt_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 215.131369
+  0: The maximum resident set size (KB)                   = 575316
+
+Test 051 control_csawmgt_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_ras_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_ras_debug
+Checking test 052 control_ras_debug results ....
+Moving baseline 052 control_ras_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 147.042417
+  0: The maximum resident set size (KB)                   = 544800
+
+Test 052 control_ras_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_diag_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_diag_debug
+Checking test 053 control_diag_debug results ....
+Moving baseline 053 control_diag_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 152.134574
+  0: The maximum resident set size (KB)                   = 591256
+
+Test 053 control_diag_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_debug_p8
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_debug_p8
+Checking test 054 control_debug_p8 results ....
+Moving baseline 054 control_debug_p8 files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 153.830831
+  0: The maximum resident set size (KB)                   = 553836
+
+Test 054 control_debug_p8 PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_thompson_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_thompson_debug
+Checking test 055 control_thompson_debug results ....
+Moving baseline 055 control_thompson_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 168.829874
+  0: The maximum resident set size (KB)                   = 891984
+
+Test 055 control_thompson_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_thompson_no_aero_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_thompson_no_aero_debug
+Checking test 056 control_thompson_no_aero_debug results ....
+Moving baseline 056 control_thompson_no_aero_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 163.454992
+  0: The maximum resident set size (KB)                   = 885192
+
+Test 056 control_thompson_no_aero_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_thompson_debug_extdiag
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_thompson_extdiag_debug
+Checking test 057 control_thompson_extdiag_debug results ....
+Moving baseline 057 control_thompson_extdiag_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 176.410823
+  0: The maximum resident set size (KB)                   = 921880
+
+Test 057 control_thompson_extdiag_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_thompson_progcld_thompson_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_thompson_progcld_thompson_debug
+Checking test 058 control_thompson_progcld_thompson_debug results ....
+Moving baseline 058 control_thompson_progcld_thompson_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 168.735360
+  0: The maximum resident set size (KB)                   = 891716
+
+Test 058 control_thompson_progcld_thompson_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/fv3_regional_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/regional_debug
+Checking test 059 regional_debug results ....
+Moving baseline 059 regional_debug files ....
+ Moving dynf000.nc .........OK
+ Moving dynf001.nc .........OK
+ Moving phyf000.nc .........OK
+ Moving phyf001.nc .........OK
+
+ 0: The total amount of wall time                        = 233.280449
+ 0: The maximum resident set size (KB)                   = 604416
+
+Test 059 regional_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_control_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_control_debug
+Checking test 060 rap_control_debug results ....
+Moving baseline 060 rap_control_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 259.643622
+  0: The maximum resident set size (KB)                   = 900436
+
+Test 060 rap_control_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_diag_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_diag_debug
+Checking test 061 rap_diag_debug results ....
+Moving baseline 061 rap_diag_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 275.311587
+  0: The maximum resident set size (KB)                   = 984140
+
+Test 061 rap_diag_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_cires_ugwp_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_cires_ugwp_debug
+Checking test 062 rap_cires_ugwp_debug results ....
+Moving baseline 062 rap_cires_ugwp_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 262.550375
+  0: The maximum resident set size (KB)                   = 902544
+
+Test 062 rap_cires_ugwp_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_noah_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_noah_debug
+Checking test 063 rap_noah_debug results ....
+Moving baseline 063 rap_noah_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 254.238310
+  0: The maximum resident set size (KB)                   = 899272
+
+Test 063 rap_noah_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_rrtmgp_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_rrtmgp_debug
+Checking test 064 rap_rrtmgp_debug results ....
+Moving baseline 064 rap_rrtmgp_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 443.277948
+  0: The maximum resident set size (KB)                   = 1008116
+
+Test 064 rap_rrtmgp_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_lndp_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_lndp_debug
+Checking test 065 rap_lndp_debug results ....
+Moving baseline 065 rap_lndp_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 256.767831
+  0: The maximum resident set size (KB)                   = 903508
+
+Test 065 rap_lndp_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_sfcdiff_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_sfcdiff_debug
+Checking test 066 rap_sfcdiff_debug results ....
+Moving baseline 066 rap_sfcdiff_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 256.531035
+  0: The maximum resident set size (KB)                   = 901936
+
+Test 066 rap_sfcdiff_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_flake_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_flake_debug
+Checking test 067 rap_flake_debug results ....
+Moving baseline 067 rap_flake_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 252.521776
+  0: The maximum resident set size (KB)                   = 901244
+
+Test 067 rap_flake_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_noah_sfcdiff_cires_ugwp_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_noah_sfcdiff_cires_ugwp_debug
+Checking test 068 rap_noah_sfcdiff_cires_ugwp_debug results ....
+Moving baseline 068 rap_noah_sfcdiff_cires_ugwp_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 434.698715
+  0: The maximum resident set size (KB)                   = 901204
+
+Test 068 rap_noah_sfcdiff_cires_ugwp_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rap_progcld_thompson_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rap_progcld_thompson_debug
+Checking test 069 rap_progcld_thompson_debug results ....
+Moving baseline 069 rap_progcld_thompson_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 252.690364
+  0: The maximum resident set size (KB)                   = 903844
+
+Test 069 rap_progcld_thompson_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/rrfs_v1beta_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/rrfs_v1beta_debug
+Checking test 070 rrfs_v1beta_debug results ....
+Moving baseline 070 rrfs_v1beta_debug files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf001.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf001.nc .........OK
+
+  0: The total amount of wall time                        = 257.555765
+  0: The maximum resident set size (KB)                   = 893568
+
+Test 070 rrfs_v1beta_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_wam_debug
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_wam_debug
+Checking test 071 control_wam_debug results ....
+Moving baseline 071 control_wam_debug files ....
+ Moving sfcf019.nc .........OK
+ Moving atmf019.nc .........OK
+
+  0: The total amount of wall time                        = 277.807554
+  0: The maximum resident set size (KB)                   = 264756
+
+Test 071 control_wam_debug PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_regional_atm
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_regional_atm
+Checking test 072 hafs_regional_atm results ....
+Moving baseline 072 hafs_regional_atm files ....
+ Moving atmf006.nc .........OK
+ Moving sfcf006.nc .........OK
+
+  0: The total amount of wall time                        = 263.937896
+  0: The maximum resident set size (KB)                   = 701408
+
+Test 072 hafs_regional_atm PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_regional_atm_thompson_gfdlsf
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_regional_atm_thompson_gfdlsf
+Checking test 073 hafs_regional_atm_thompson_gfdlsf results ....
+Moving baseline 073 hafs_regional_atm_thompson_gfdlsf files ....
+ Moving atmf006.nc .........OK
+ Moving sfcf006.nc .........OK
+
+  0: The total amount of wall time                        = 311.311223
+  0: The maximum resident set size (KB)                   = 1054020
+
+Test 073 hafs_regional_atm_thompson_gfdlsf PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_regional_atm_ocn
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_regional_atm_ocn
+Checking test 074 hafs_regional_atm_ocn results ....
+Moving baseline 074 hafs_regional_atm_ocn files ....
+ Moving atmf006.nc .........OK
+ Moving sfcf006.nc .........OK
+ Moving archv.2019_241_06.a .........OK
+ Moving archs.2019_241_06.a .........OK
+ Moving ufs.hafs.cpl.hi.2019-08-29-21600.nc .........OK
+ Moving ufs.hafs.cpl.r.2019-08-29-21600.nc .........OK
+
+  0: The total amount of wall time                        = 352.177394
+  0: The maximum resident set size (KB)                   = 717984
+
+Test 074 hafs_regional_atm_ocn PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_regional_atm_wav
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_regional_atm_wav
+Checking test 075 hafs_regional_atm_wav results ....
+Moving baseline 075 hafs_regional_atm_wav files ....
+ Moving atmf006.nc .........OK
+ Moving sfcf006.nc .........OK
+ Moving out_grd.ww3 .........OK
+ Moving out_pnt.ww3 .........OK
+
+  0: The total amount of wall time                        = 824.662603
+  0: The maximum resident set size (KB)                   = 721232
+
+Test 075 hafs_regional_atm_wav PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_regional_atm_ocn_wav
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_regional_atm_ocn_wav
+Checking test 076 hafs_regional_atm_ocn_wav results ....
+Moving baseline 076 hafs_regional_atm_ocn_wav files ....
+ Moving atmf006.nc .........OK
+ Moving sfcf006.nc .........OK
+ Moving archv.2019_241_06.a .........OK
+ Moving archs.2019_241_06.a .........OK
+ Moving out_grd.ww3 .........OK
+ Moving out_pnt.ww3 .........OK
+
+  0: The total amount of wall time                        = 937.820918
+  0: The maximum resident set size (KB)                   = 722304
+
+Test 076 hafs_regional_atm_ocn_wav PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_regional_1nest_atm
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_regional_1nest_atm
+Checking test 077 hafs_regional_1nest_atm results ....
+Moving baseline 077 hafs_regional_1nest_atm files ....
+ Moving atmf006.nc .........OK
+ Moving sfcf006.nc .........OK
+ Moving atm.nest02.f006.nc .........OK
+ Moving sfc.nest02.f006.nc .........OK
+
+  0: The total amount of wall time                        = 412.017144
+  0: The maximum resident set size (KB)                   = 311276
+
+Test 077 hafs_regional_1nest_atm PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_regional_telescopic_2nests_atm
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_regional_telescopic_2nests_atm
+Checking test 078 hafs_regional_telescopic_2nests_atm results ....
+Moving baseline 078 hafs_regional_telescopic_2nests_atm files ....
+ Moving atmf006.nc .........OK
+ Moving sfcf006.nc .........OK
+ Moving atm.nest02.f006.nc .........OK
+ Moving sfc.nest02.f006.nc .........OK
+ Moving atm.nest03.f006.nc .........OK
+ Moving sfc.nest03.f006.nc .........OK
+
+  0: The total amount of wall time                        = 425.797567
+  0: The maximum resident set size (KB)                   = 323296
+
+Test 078 hafs_regional_telescopic_2nests_atm PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_global_1nest_atm
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_global_1nest_atm
+Checking test 079 hafs_global_1nest_atm results ....
+Moving baseline 079 hafs_global_1nest_atm files ....
+ Moving atmf006.nc .........OK
+ Moving sfcf006.nc .........OK
+ Moving atm.nest02.f006.nc .........OK
+ Moving sfc.nest02.f006.nc .........OK
+
+  0: The total amount of wall time                        = 191.373629
+  0: The maximum resident set size (KB)                   = 199112
+
+Test 079 hafs_global_1nest_atm PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_global_multiple_4nests_atm
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_global_multiple_4nests_atm
+Checking test 080 hafs_global_multiple_4nests_atm results ....
+Moving baseline 080 hafs_global_multiple_4nests_atm files ....
+ Moving atmf006.nc .........OK
+ Moving sfcf006.nc .........OK
+ Moving atm.nest02.f006.nc .........OK
+ Moving sfc.nest02.f006.nc .........OK
+ Moving atm.nest03.f006.nc .........OK
+ Moving atm.nest03.f006.nc .........OK
+ Moving sfc.nest04.f006.nc .........OK
+ Moving sfc.nest04.f006.nc .........OK
+ Moving atm.nest05.f006.nc .........OK
+ Moving sfc.nest05.f006.nc .........OK
+
+  0: The total amount of wall time                        = 529.138312
+  0: The maximum resident set size (KB)                   = 269744
+
+Test 080 hafs_global_multiple_4nests_atm PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_regional_docn
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_regional_docn
+Checking test 081 hafs_regional_docn results ....
+Moving baseline 081 hafs_regional_docn files ....
+ Moving atmf006.nc .........OK
+ Moving sfcf006.nc .........OK
+ Moving ufs.hafs.cpl.hi.2019-08-29-21600.nc .........OK
+ Moving ufs.hafs.cpl.r.2019-08-29-21600.nc .........OK
+ Moving ufs.hafs.docn.r.2019-08-29-21600.nc .........OK
+
+  0: The total amount of wall time                        = 330.742085
+  0: The maximum resident set size (KB)                   = 720476
+
+Test 081 hafs_regional_docn PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_regional_docn_oisst
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_regional_docn_oisst
+Checking test 082 hafs_regional_docn_oisst results ....
+Moving baseline 082 hafs_regional_docn_oisst files ....
+ Moving atmf006.nc .........OK
+ Moving sfcf006.nc .........OK
+ Moving ufs.hafs.cpl.hi.2019-08-29-21600.nc .........OK
+ Moving ufs.hafs.cpl.r.2019-08-29-21600.nc .........OK
+ Moving ufs.hafs.docn.r.2019-08-29-21600.nc .........OK
+
+  0: The total amount of wall time                        = 328.478903
+  0: The maximum resident set size (KB)                   = 720460
+
+Test 082 hafs_regional_docn_oisst PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/hafs_regional_datm_cdeps
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/hafs_regional_datm_cdeps
+Checking test 083 hafs_regional_datm_cdeps results ....
+Moving baseline 083 hafs_regional_datm_cdeps files ....
+ Moving ufs.hafs.cpl.hi.2019-08-30-00000.nc .........OK
+ Moving ufs.hafs.cpl.r.2019-08-30-00000.nc .........OK
+ Moving ufs.hafs.datm.r.2019-08-30-00000.nc .........OK
+
+  0: The total amount of wall time                        = 948.011172
+  0: The maximum resident set size (KB)                   = 854724
+
+Test 083 hafs_regional_datm_cdeps PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/datm_cdeps_control_cfsr
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/datm_cdeps_control_cfsr
+Checking test 084 datm_cdeps_control_cfsr results ....
+Moving baseline 084 datm_cdeps_control_cfsr files ....
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2011-10-02-00000.nc .........OK
+ Moving RESTART/DATM_CFSR.cpl.r.2011-10-02-00000.nc .........OK
+
+ 0: The total amount of wall time                        = 139.584792
+ 0: The maximum resident set size (KB)                   = 718040
+
+Test 084 datm_cdeps_control_cfsr PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/datm_cdeps_control_gefs
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/datm_cdeps_control_gefs
+Checking test 085 datm_cdeps_control_gefs results ....
+Moving baseline 085 datm_cdeps_control_gefs files ....
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2011-10-02-00000.nc .........OK
+ Moving RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
+
+ 0: The total amount of wall time                        = 137.007682
+ 0: The maximum resident set size (KB)                   = 619012
+
+Test 085 datm_cdeps_control_gefs PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/datm_cdeps_stochy_gefs
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/datm_cdeps_stochy_gefs
+Checking test 086 datm_cdeps_stochy_gefs results ....
+Moving baseline 086 datm_cdeps_stochy_gefs files ....
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2011-10-02-00000.nc .........OK
+ Moving RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
+
+ 0: The total amount of wall time                        = 138.674250
+ 0: The maximum resident set size (KB)                   = 618928
+
+Test 086 datm_cdeps_stochy_gefs PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/datm_cdeps_bulk_cfsr
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/datm_cdeps_bulk_cfsr
+Checking test 087 datm_cdeps_bulk_cfsr results ....
+Moving baseline 087 datm_cdeps_bulk_cfsr files ....
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2011-10-02-00000.nc .........OK
+ Moving RESTART/DATM_CFSR.cpl.r.2011-10-02-00000.nc .........OK
+
+ 0: The total amount of wall time                        = 140.708312
+ 0: The maximum resident set size (KB)                   = 718704
+
+Test 087 datm_cdeps_bulk_cfsr PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/datm_cdeps_bulk_gefs
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/datm_cdeps_bulk_gefs
+Checking test 088 datm_cdeps_bulk_gefs results ....
+Moving baseline 088 datm_cdeps_bulk_gefs files ....
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2011-10-02-00000.nc .........OK
+ Moving RESTART/DATM_GEFS.cpl.r.2011-10-02-00000.nc .........OK
+
+ 0: The total amount of wall time                        = 136.520809
+ 0: The maximum resident set size (KB)                   = 617844
+
+Test 088 datm_cdeps_bulk_gefs PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/datm_cdeps_mx025_cfsr
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/datm_cdeps_mx025_cfsr
+Checking test 089 datm_cdeps_mx025_cfsr results ....
+Moving baseline 089 datm_cdeps_mx025_cfsr files ....
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/MOM.res_1.nc .........OK
+ Moving RESTART/MOM.res_2.nc .........OK
+ Moving RESTART/MOM.res_3.nc .........OK
+ Moving RESTART/iced.2011-10-01-43200.nc .........OK
+ Moving RESTART/DATM_CFSR.cpl.r.2011-10-01-43200.nc .........OK
+
+  0: The total amount of wall time                        = 308.908476
+  0: The maximum resident set size (KB)                   = 566088
+
+Test 089 datm_cdeps_mx025_cfsr PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/datm_cdeps_mx025_gefs
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/datm_cdeps_mx025_gefs
+Checking test 090 datm_cdeps_mx025_gefs results ....
+Moving baseline 090 datm_cdeps_mx025_gefs files ....
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/MOM.res_1.nc .........OK
+ Moving RESTART/MOM.res_2.nc .........OK
+ Moving RESTART/MOM.res_3.nc .........OK
+ Moving RESTART/iced.2011-10-01-43200.nc .........OK
+ Moving RESTART/DATM_GEFS.cpl.r.2011-10-01-43200.nc .........OK
+
+  0: The total amount of wall time                        = 301.276510
+  0: The maximum resident set size (KB)                   = 532788
+
+Test 090 datm_cdeps_mx025_gefs PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/datm_cdeps_3072x1536_cfsr
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/datm_cdeps_3072x1536_cfsr
+Checking test 091 datm_cdeps_3072x1536_cfsr results ....
+Moving baseline 091 datm_cdeps_3072x1536_cfsr files ....
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2011-10-02-00000.nc .........OK
+ Moving RESTART/DATM_CFSR3072x1536.cpl.r.2011-10-02-00000.nc .........OK
+
+ 0: The total amount of wall time                        = 192.260539
+ 0: The maximum resident set size (KB)                   = 1833188
+
+Test 091 datm_cdeps_3072x1536_cfsr PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/datm_cdeps_debug_cfsr
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/datm_cdeps_debug_cfsr
+Checking test 092 datm_cdeps_debug_cfsr results ....
+Moving baseline 092 datm_cdeps_debug_cfsr files ....
+ Moving RESTART/MOM.res.nc .........OK
+ Moving RESTART/iced.2011-10-01-21600.nc .........OK
+ Moving RESTART/DATM_CFSR.cpl.r.2011-10-01-21600.nc .........OK
+
+ 0: The total amount of wall time                        = 434.202698
+ 0: The maximum resident set size (KB)                   = 725988
+
+Test 092 datm_cdeps_debug_cfsr PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_atmwav
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_atmwav
+Checking test 093 control_atmwav results ....
+Moving baseline 093 control_atmwav files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf012.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf012.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF12 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF12 .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+ Moving 20210322.180000.restart.glo_1deg .........OK
+
+  0: The total amount of wall time                        = 79.522283
+  0: The maximum resident set size (KB)                   = 493348
+
+Test 093 control_atmwav PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_c384gdas_wav
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_c384gdas_wav
+Checking test 094 control_c384gdas_wav results ....
+Moving baseline 094 control_c384gdas_wav files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf003.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf003.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF03 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF03 .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+ Moving 20210322.030000.restart.aoc_9km .........OK
+ Moving 20210322.030000.restart.gnh_10m .........OK
+ Moving 20210322.030000.restart.gsh_15m .........OK
+
+  0: The total amount of wall time                        = 699.451877
+  0: The maximum resident set size (KB)                   = 1046408
+
+Test 094 control_c384gdas_wav PASS
+
+
+baseline dir = /scratch2/BMC/wrfruc/RT/NEMSfv3gfs/gsl-develop-20220325/INTEL/control_atm_aerosols
+working dir  = /scratch1/BMC/wrfruc/mtoy/stmp2/Michael.Toy/FV3_RT/rt_134192/control_atm_aerosols
+Checking test 095 control_atm_aerosols results ....
+Moving baseline 095 control_atm_aerosols files ....
+ Moving sfcf000.nc .........OK
+ Moving sfcf024.nc .........OK
+ Moving atmf000.nc .........OK
+ Moving atmf024.nc .........OK
+ Moving GFSFLX.GrbF00 .........OK
+ Moving GFSFLX.GrbF24 .........OK
+ Moving GFSPRS.GrbF00 .........OK
+ Moving GFSPRS.GrbF24 .........OK
+ Moving gocart.inst_aod.20210322_0700z.nc4 .........OK
+ Moving gocart.inst_aod.20210323_0600z.nc4 .........OK
+ Moving gocart.tavg_cmass.20210322_0730z.nc4 .........OK
+ Moving gocart.tavg_cmass.20210323_0430z.nc4 .........OK
+ Moving RESTART/coupler.res .........OK
+ Moving RESTART/fv_core.res.nc .........OK
+ Moving RESTART/fv_core.res.tile1.nc .........OK
+ Moving RESTART/fv_core.res.tile2.nc .........OK
+ Moving RESTART/fv_core.res.tile3.nc .........OK
+ Moving RESTART/fv_core.res.tile4.nc .........OK
+ Moving RESTART/fv_core.res.tile5.nc .........OK
+ Moving RESTART/fv_core.res.tile6.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile1.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile2.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile3.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile4.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile5.nc .........OK
+ Moving RESTART/fv_srf_wnd.res.tile6.nc .........OK
+ Moving RESTART/fv_tracer.res.tile1.nc .........OK
+ Moving RESTART/fv_tracer.res.tile2.nc .........OK
+ Moving RESTART/fv_tracer.res.tile3.nc .........OK
+ Moving RESTART/fv_tracer.res.tile4.nc .........OK
+ Moving RESTART/fv_tracer.res.tile5.nc .........OK
+ Moving RESTART/fv_tracer.res.tile6.nc .........OK
+ Moving RESTART/phy_data.tile1.nc .........OK
+ Moving RESTART/phy_data.tile2.nc .........OK
+ Moving RESTART/phy_data.tile3.nc .........OK
+ Moving RESTART/phy_data.tile4.nc .........OK
+ Moving RESTART/phy_data.tile5.nc .........OK
+ Moving RESTART/phy_data.tile6.nc .........OK
+ Moving RESTART/sfc_data.tile1.nc .........OK
+ Moving RESTART/sfc_data.tile2.nc .........OK
+ Moving RESTART/sfc_data.tile3.nc .........OK
+ Moving RESTART/sfc_data.tile4.nc .........OK
+ Moving RESTART/sfc_data.tile5.nc .........OK
+ Moving RESTART/sfc_data.tile6.nc .........OK
+
+  0: The total amount of wall time                        = 280.362452
+  0: The maximum resident set size (KB)                   = 892064
+
+Test 095 control_atm_aerosols PASS
+
+
+REGRESSION TEST WAS SUCCESSFUL
+Fri Mar 25 04:06:26 UTC 2022
+Elapsed time: 01h:04m:06s. Have a nice day!

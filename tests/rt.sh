@@ -256,10 +256,8 @@ elif [[ $MACHINE_ID = hera.* ]]; then
   COMPILE_QUEUE=batch
 
   #ACCNR="${ACCNR:-fv3-cpu}
-  ACCNR=wrfruc
   PARTITION=
-  #dprefix=/scratch1/NCEPDEV
-  dprefix=/scratch1/BMC/wrfruc/mtoy
+  dprefix=/scratch1/NCEPDEV
   DISKNM=/scratch2/BMC/wrfruc/RT
   #DISKNM=$dprefix/nems/emc.nemspara/RT
   STMP=$dprefix/stmp4
@@ -309,12 +307,10 @@ elif [[ $MACHINE_ID = jet.* ]]; then
 
   QUEUE=batch
   COMPILE_QUEUE=batch
-  #ACCNR=${ACCNR:-h-nems}
-  ACCNR=wrfruc
+  ACCNR=${ACCNR:-h-nems}
   PARTITION=xjet
   DISKNM=/lfs4/BMC/wrfruc/RT
-  #dprefix=${dprefix:-/lfs4/HFIP/$ACCNR/$USER}
-  dprefix=/lfs4/BMC/wrfruc/mtoy
+  dprefix=${dprefix:-/lfs4/HFIP/$ACCNR/$USER}
   STMP=${STMP:-$dprefix/RT_BASELINE}
   PTMP=${PTMP:-$dprefix/RT_RUNDIRS}
 
